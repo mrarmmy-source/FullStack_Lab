@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab</title>
+    <script src="LabFS_JS_01.js"></script>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+ 
+<body>
+   <table>
+    Profile:
+    <br/><br/>
+ 
+    Enter your name:
+    <br/>
+    <input type="text" id="fname"/>
+    <br/><br/>
+ 
+    Enter your name:
+    <br/>
+    <input type="text" id="lname"/>
+    <br/><br/>
+ 
+    Enter your age:
+    <br/>
+    <input type="text" id="age"/>
+    <br/><br/>
+   </table>
+ 
+    <button onclick="addUser()">    
+        Add User
+    </button>
+ 
+    <br/><br/>
+ 
+    <table id="usertable">
+        <tr>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th></th>
+        </tr>
+ 
+        <tr>
+            <td>us</td>
+            <td>2</td>
+            <td>131</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </table>
+</body>
+</html>
